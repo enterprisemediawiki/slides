@@ -1,0 +1,7 @@
+# OS-specific files to ignore:
+
+## Mac OS X
+.DS_Store
+
+## Windows
+Thumbs.db
