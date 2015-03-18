@@ -50,6 +50,9 @@
 						<small><a href="http://enterprisemediawiki.org">EnterpriseMediaWiki.org</a>
 						</small>
 					</p>
+					<p>
+						<small>(Use arrow keys to navigate)</small>
+					</p>
 				</section>
 
 				<section>
@@ -749,10 +752,11 @@
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: false,
+				controls: true,
 				progress: true,
 				history: true,
 				center: true,
+				mouseWheel: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
