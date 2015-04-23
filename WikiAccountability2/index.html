@@ -55,171 +55,242 @@
 					</p>
 				</section>
 
-
 				<section>
-					<h2>What is the EVA Wiki?</h2>
-					<div class="labeled-chart-container"><canvas id="myChart" /></div>
-				</section>
-
-				<section>
-					<h2>Wikipedia Scale</h2>
+					<h2>Wikipedia Scale: High End</h2>
 					<ul>
 						<li class="fragment roll-in">
-							The <span class="fragment highlight-green">EDIT</span>-<span class="fragment highlight-green">ALERT</span>-<span class="fragment highlight-green">REVIEW</span> loop
+							Operating systems: Ubuntu, Windows, OS X
+							<ul>
+								<li>100s of watchers</li>
+								<li>1000s of edits</li>
+								<li>1000s of editors</li>
+							</ul>
 						</li>
 						<li class="fragment roll-in">
-							Accountability analytics 
+							Popular websites: Google, Facebook
+							<ul>
+								<li>1000s of watchers</li>
+								<li>1000s of edits</li>
+								<li>1000s of editors</li>
+							</ul>
+						</li>
+						<li class="fragment roll-in">
+							Presidents: Barack Obama, George W. Bush
+							<ul>
+								<li>1000s of watchers</li>
+								<li>10000s of edits</li>
+								<li>1000s of editors</li>
+							</ul>
 						</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Edit - Alert - Review Loop</h2>
-					<img height="400px" src="img/EARL-1.png" alt="EARL">
-					<ol>
+					<h2>Wikipedia Scale: Low End</h2>
+					<ul>
 						<li class="fragment roll-in">
-							Systems provides method to <span class="fragment highlight-blue">edit</span> content
+							[[Lima Bean]]
+							<ul>
+								<li>Fewer than 30 watchers</li>
+								<li>784 edits</li>
+								<li>487 editors</li>
+							</ul>
 						</li>
 						<li class="fragment roll-in">
-							When edits are made the system sends an <span class="fragment highlight-blue">alert</span>
+							[[Augustan literature]]
+							<ul>
+								<li>40 watchers</li>
+								<li>487 edits</li>
+								<li>190 editors</li>
+							</ul>
 						</li>
 						<li class="fragment roll-in">
-							Users <span class="fragment highlight-blue">review</span> changes
+							[[Geography of Botswana]]
+							<ul>
+								<li>Fewer than 30 watchers</li>
+								<li>156 edits</li>
+								<li>54 editors</li>
+								<li class="fragment roll-in highlight-red">14 years old</li>
+							</ul>
 						</li>
-					</ol>
-
+					</ul>
 				</section>
 
 				<section>
-					<h2>Alerts</h2>
+					<h2>Our Wiki's Scale</h2>
+					<ol>
+						<li class="fragment roll-in">47 active contributors</li>
+						<li class="fragment roll-in">67272 edits</li>
+						<li class="fragment roll-in">400k views in 3.5 years</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Watcher Distribution: December 2014</h2>
+					<div class="labeled-chart-container"><canvas id="chart-watcher-distribution" /></div>
+				</section>
+
+				<section>
+					<h2>Quantifying Accountability</h2>
 					<ol>
 						<li class="fragment roll-in">
-							E-mail
+							Determine number of reviewers for each page
 						</li>
 						<li class="fragment roll-in" style="white-space:nowrap;">
-							Pending Reviews
+							Determine a way to rate contributors
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Combine (1) and (2) to identify weak points in our data
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Address weak points
 						</li>
 					</ol>
 				</section>
 
 				<section>
-					<h2>Quick Pending Reviews Demo</h2>
+					<h2>What MediaWiki already does</h2>
+					<img src="img/WikipediaNasaData.png" alt="Page statistics for NASA page on Wikipedia">
 				</section>
 
 				<section>
-					<h2>Page views with pages in bins of 50</h2>
-					<img height="600px" src="img/PageViewsChart.png" alt="Page Views Chart">
-				</section>
-				
-				<section>
-					<h2>Number of page reviews</h2>
-					<img height="600px" src="img/ReviewsChart.png" alt="Reviews Chart">
-				</section>
-				
-				<section>
-					<h2>Full Pending Reviews Demo</h2>
+					<h2>What MediaWiki already does</h2>
+					<img src="img/WikipediaPageInfoLink.png" alt="Page info link on Wikipedia">
 				</section>
 
 				<section>
-					<h2>Edit - Alert - Review Loop</h2>
-					<img height="400px" src="img/EARL-1.png" alt="EARL">
+					<h2>What MediaWiki already does</h2>
+					<img src="img/UnwatchedPages.png" alt="MediaWiki's unwatched pages">
 				</section>
 
 				<section>
-					<h2>Edit - Alert - Revieeeeeeeeeeeew Loop</h2>
-					<img height="300px" src="img/EARL-2.png" alt="EARL">
+					<h2>Extension:Watch Analytics</h2>
+					<img src="img/WatchAnalyticsPages-NoWatchQuality.png" alt="MediaWiki extension Watch Analytics">
 				</section>
 
 				<section>
-					<h2>Blocked Loop</h2>
-					<img height="300px" src="img/EARL-3.png" alt="EARL">
-					<p class="fragment fade-in">
-						One user with a long review time blocks other users from further edits
-					</p>
-				</section>				
+					<section>
+						<h2>Watcher&#x2b04;page relationships</h2>
+						<img height="600px" src="img/ReviewersJuly2014.png" alt="" class="fragment fade-in">
+					</section>
+					<section>
+						<h2>Quantifying Accountability</h2>
+						<ol>
+							<li style="white-space:nowrap;">
+								Determine number of reviewers for each page
+							</li>
+							<li style="white-space:nowrap;">
+								Determine a way to rate contributors
+							</li>
+							<li style="white-space:nowrap;">
+								Combine (1) and (2) to identify weak points in our data
+							</li>
+							<li style="white-space:nowrap;">
+								Address weak points
+							</li>
+						</ol>
+					</section>
+
+				</section>
 
 				<section>
-					<h2>The Wiki Way</h2>
-					<img height="300px" src="img/EARL-4.png" alt="EARL">
-					<ul>
-						<li class="fragment fade-in">
-							Users don't have to wait for other reviewers
+					<h2>Accountability Emergency</h2>
+					<h3>Short term goals</h3>
+					<ol>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Encourage users to do their reviews
 						</li>
-						<li class="fragment fade-in">
-							When delayed reviewers come back . . . <span class="fragment fade-in"><span class="fragment highlight-green">easily review sum of all changes</span></span>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Eliminate singly-watched pages
 						</li>
-					</ul>
-				</section>				
-
-				<section>
-					<h2>Accountability</h2>
-					<ul>
-					<li>
-						The edit-alert-review loop
-					</li>
-					<li>
-						Accountability analytics 
-					</li>
-					</ul>
+					</ol>
 				</section>
 
 				<section>
-					<h2>Accountability Analytics</h2>
-					<p class="fragment roll-in">
-						Quantifying how well a page has been reviewed:
-					</p>
-					<ul>
-					<li class="fragment roll-in">
-						number of reviewers
-					</li>
-					<li class="fragment roll-in">
-						trust in individual reviewers
+					<section>
+						<h2>Nondescript Watchlist Link</h2>
+						<img src="img/WikipediaWatchlistLink.png" alt="Wikipedia watchlist link">
+					</section>
+					<section>
+						<h2>Confusing Watchlist</h2>
+						<img src="img/MediaWikiWatchlist1.png" alt="Wikipedia watchlist">
+					</section>
+					<section>
+						<h2>Confusing Watchlist, Part 2</h2>
+						<img src="img/MediaWikiWatchlist2.png" alt="Wikipedia watchlist">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Pending Reviews</h2>
+						<img src="img/PendingReviews1.png" alt="Watch Analytics Pending Reviews">
+					</section>
+					<section>
+						<h2>Watch Suggestions</h2>
+						<img src="img/WatchSuggestions.png" alt="Watch Analytics Pending Reviews Watch Suggestions">
+					</section>
+
+					<section>
+						<h2>Watch Suggestions: Real Conversation</h2>
+						<p class="fragment fade-in" style="font-style:italic;font-size:70%;">
+							Disclaimer: the names are fake and the words are paraphrased, but the conversation is real.
+						</p>
+						<p class="fragment fade-in">
+							The other day Amy and Bob were heckling each other about who was watching more pages.
+						</p>
+						<br />
 						<ul>
-							<li class="fragment roll-in">
-								reviewer's organization
+							<li class="fragment fade-in">
+								Amy: "I'm watching almost as many pages as our boss...I'm going to get more than her!"
 							</li>
-							<li class="fragment roll-in">							
-								certifications
+							<li class="fragment fade-in">
+								Bob: "It just seems to randomly suggest pages to me, though. Why would I care about Rule #12345?" 
 							</li>
-							<li class="fragment roll-in">
-								activity on wiki
+							<li class="fragment fade-in">
+								Amy: "Well, that rule page is about <span class="fragment highlight-blue">your hardware</span>." 
 							</li>
-							<li class="fragment roll-in">
-								how others rate their contributions
+							<li class="fragment fade-in">
+								Bob: "Oh, well maybe I do want to watch that!"
 							</li>
 						</ul>
-					</li>
-					</ul>
+					</section>
+
 				</section>
 
-				<section>
-					<h2>Watch Suggestions Demo</h2>
-				</section>
 
 				<section>
-					<h2>Watch Suggestions: Real Conversation</h2>
-					<p class="fragment fade-in" style="font-style:italic;font-size:70%;">
-						Disclaimer: the names are fake and the words are paraphrased, but the conversation is real.
-					</p>
-					<p class="fragment fade-in">
-						The other day Amy and Bob were heckling each other about who was watching more pages.
-					</p>
-					<br />
-					<ul>
-						<li class="fragment fade-in">
-							Amy: "I'm watching almost as many pages as our group lead...I'm going to get more than her!"
-						</li>
-						<li class="fragment fade-in">
-							Bob: "It just seems to randomly suggest pages to me, though. Why would I care about OCAD 12345?" 
-						</li>
-						<li class="fragment fade-in">
-							Amy: "Well, that OCAD page is about <span class="fragment highlight-blue">your hardware</span>." 
-						</li>
-						<li class="fragment fade-in">
-							Bob: "Oh, well maybe I do want to watch that!"
-						</li>
-					</ul>
+					<h2>How has Watch Suggestions helped?</h2>
+					<div class="labeled-chart-container"><canvas id="chart-watch-suggestions-change" /></div>
 				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<section>
 					<h2>How has Watch Suggestions helped?</h2>
@@ -326,7 +397,7 @@
 		<script src="js/reveal.min.js"></script>
 
 
-		<script src="js/Chart.js/Chart.min.js"></script>
+		<script src="js/Chart.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script>
 
@@ -381,35 +452,35 @@
 
 
 			// Get the context of the canvas element we want to select
-			var ctx = document.getElementById("myChart").getContext("2d");
+			var ctx = document.getElementById("chart-watcher-distribution").getContext("2d");
 
 			var data = [
 			    {
 			        value: 57,
 			        color:"#F7464A",
 			        highlight: "#FF5A5E",
-			        label: "1 watcher",
+			        label: "1 watcher (57%)",
 			        labelColor: 'black'
 			    },
 			    {
 			        value: 18,
 			        color: "#46BFBD",
 			        highlight: "#5AD3D1",
-			        label: "2 watchers",
+			        label: "2 watchers (18%)",
 			        labelColor: 'white'
 			    },
 			    {
 			        value: 17,
 			        color: "#FDB45C",
 			        highlight: "#FFC870",
-			        label: "3-5 watchers",
+			        label: "3-5 watchers (17%)",
 			        labelColor: 'white'
 			    },
 			    {
 			        value: 8,
 			        color: "green",
-			        highlight: "#FFC870",
-			        label: "6+ watchers",
+			        highlight: "green",
+			        label: "6+ watchers (8%)",
 			        labelColor: 'white'
 			    }
 			];
@@ -422,8 +493,56 @@
 
 			};
 			var myDoughnutChart = new Chart(ctx).Doughnut(data,options)
-			$("#myChart").after( myDoughnutChart.generateLegend() );
-			//console.log( myDoughnutChart.generateLegend() );
+			$("#chart-watcher-distribution").after( myDoughnutChart.generateLegend() );
+
+
+
+
+
+
+
+
+			var ctx = document.getElementById("chart-watch-suggestions-change").getContext("2d");
+			var data = {
+			    labels: ["January", "February", "March", "April", "May", "June", "July"],
+			    datasets: [
+			        {
+			            label: "My First dataset",
+			            fillColor: "rgba(220,220,220,0.2)",
+			            strokeColor: "rgba(220,220,220,1)",
+			            pointColor: "rgba(220,220,220,1)",
+			            pointStrokeColor: "#fff",
+			            pointHighlightFill: "#fff",
+			            pointHighlightStroke: "rgba(220,220,220,1)",
+			            data: [65, 59, 80, 81, 56, 55, 40]
+			        },
+			        {
+			            label: "My Second dataset",
+			            fillColor: "rgba(151,187,205,0.2)",
+			            strokeColor: "rgba(151,187,205,1)",
+			            pointColor: "rgba(151,187,205,1)",
+			            pointStrokeColor: "#fff",
+			            pointHighlightFill: "#fff",
+			            pointHighlightStroke: "rgba(151,187,205,1)",
+			            data: [28, 48, 40, 19, 86, 27, 90]
+			        }
+			    ]
+			};
+
+			var myDoughnutChart = new Chart(ctx).Doughnut(data,options)
+			$("#chart-watcher-distribution").after( myDoughnutChart.generateLegend() );
+
+
+			new Chart(ctx).Line(data, {
+			    bezierCurve: false
+			});
+			// This will create a chart with all of the default options, merged from the global config,
+			// and the Line chart defaults, but this particular instance will have `bezierCurve` set to false.
+
+
+				
+
+
 		</script>
 		<style>
 			.labeled-chart-container {
