@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Wiki Accountability</title>
+
+		<meta name="description" content="FIXME: Add content.">
+		<meta name="author" content="James Montalvo & Daren Welsh">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Wiki Accountability</h1>
+					<br />
+					<p>
+						<small>
+							James Montalvo - Daren Welsh - Stephanie Johnston
+						</small>
+					</p>
+					<p>
+						<small>(Use arrow keys to navigate)</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Wikipedia Scale: High End</h2>
+					<ul>
+						<li class="fragment roll-in">
+							Operating systems: Ubuntu, Windows, OS X
+							<ul>
+								<li>100s of watchers</li>
+								<li>1000s of edits</li>
+								<li>1000s of editors</li>
+							</ul>
+						</li>
+						<li class="fragment roll-in">
+							Popular websites: Google, Facebook
+							<ul>
+								<li>1000s of watchers</li>
+								<li>1000s of edits</li>
+								<li>1000s of editors</li>
+							</ul>
+						</li>
+						<li class="fragment roll-in">
+							Presidents: Barack Obama, George W. Bush
+							<ul>
+								<li>1000s of watchers</li>
+								<li>10000s of edits</li>
+								<li>1000s of editors</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Wikipedia Scale: Low End</h2>
+					<ul>
+						<li class="fragment roll-in">
+							[[Lima Bean]]
+							<ul>
+								<li>Fewer than 30 watchers</li>
+								<li>784 edits</li>
+								<li>487 editors</li>
+							</ul>
+						</li>
+						<li class="fragment roll-in">
+							[[Augustan literature]]
+							<ul>
+								<li>40 watchers</li>
+								<li>487 edits</li>
+								<li>190 editors</li>
+							</ul>
+						</li>
+						<li class="fragment roll-in">
+							[[Geography of Botswana]]
+							<ul>
+								<li>Fewer than 30 watchers</li>
+								<li>156 edits</li>
+								<li>54 editors</li>
+								<li class="fragment roll-in highlight-red">14 years old</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Our Wiki's Scale</h2>
+					<ul>
+						<li class="fragment roll-in">47 active contributors</li>
+						<li class="fragment roll-in">69,753 edits in 3.5 years</li>
+						<li class="fragment roll-in">~100 daily viewers</li>
+						<li class="fragment roll-in">Over 600 viewers in 2015</li>
+						<li class="fragment roll-in">400k views total views</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Watcher&#x2b04;page relationships</h2>
+					<img height="600px" src="img/ReviewersJuly2014.png" alt="" class="fragment fade-in">
+				</section>
+
+				<section>
+					<h2>Accountability Emergency</h2>
+					<h3>Short term goals</h3>
+					<ol>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Encourage users to do their reviews
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Eliminate singly-watched pages
+						</li>
+					</ol>
+				</section>
+
+
+				<!--
+				<section>
+					<h2>Quantifying Accountability</h2>
+					<ol>
+						<li class="fragment roll-in">
+							Determine number of reviewers for each page
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Determine a way to rate contributors
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Combine (1) and (2) to identify weak points in our data
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Address weak points
+						</li>
+					</ol>
+				</section>
+				-->
+
+
+
+				<!--
+				<section>
+					<h2>What MediaWiki already does</h2>
+					<img src="img/WikipediaNasaData.png" alt="Page statistics for NASA page on Wikipedia">
+				</section>
+
+				<section>
+					<h2>What MediaWiki already does</h2>
+					<img src="img/WikipediaPageInfoLink.png" alt="Page info link on Wikipedia">
+				</section>
+
+				<section>
+					<h2>What MediaWiki already does</h2>
+					<img src="img/UnwatchedPages.png" alt="MediaWiki's unwatched pages">
+				</section>
+				-->
+
+				<section>
+					<h2>Extension:Watch Analytics</h2>
+					<img src="img/WatchAnalyticsPages-NoWatchQuality.png" alt="MediaWiki extension Watch Analytics">
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Nondescript Watchlist Link</h2>
+						<img src="img/WikipediaWatchlistLink.png" alt="Wikipedia watchlist link">
+					</section>
+					<section>
+						<h2>Confusing Watchlist</h2>
+						<img src="img/MediaWikiWatchlist1.png" alt="Wikipedia watchlist">
+					</section>
+					<section>
+						<h2>Confusing Watchlist, Part 2</h2>
+						<img src="img/MediaWikiWatchlist2.png" alt="Wikipedia watchlist">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Pending Reviews</h2>
+						<img src="img/PendingReviews1.png" alt="Watch Analytics Pending Reviews">
+					</section>
+
+					<section>
+						<h2>How well are we doing with reviewers?</h2>
+						<img height="600px" src="img/ReviewersJuly2014.png" alt="" class="fragment fade-in">
+					</section>
+
+					<section>
+						<h2>Big improvements</h2>
+						<img height="600px" src="img/CurrentReviewership.png" alt="">
+					</section>
+				</section>
+
+
+				<section>
+					<h2>Watcher Distribution: December 2014</h2>
+					<img src="img/dec2014pie.svg" />
+				</section>
+
+
+				<section>
+					<section>
+						<h2>At the bottom of Pending Reviews</h2>
+						<img src="img/PendingReviews1.png" alt="Watch Analytics Pending Reviews">
+					</section>
+
+					<section>
+						<h2>Watch Suggestions</h2>
+						<img src="img/WatchSuggestions.png" alt="Watch Analytics Pending Reviews Watch Suggestions">
+					</section>
+
+					<section>
+						<h2>Watch Suggestions: Real Conversation</h2>
+						<p class="fragment fade-in" style="font-style:italic;font-size:70%;">
+							Disclaimer: the names are fake and the words are paraphrased, but the conversation is real.
+						</p>
+						<p class="fragment fade-in">
+							The other day Amy and Bob were heckling each other about who was watching more pages.
+						</p>
+						<br />
+						<ul>
+							<li class="fragment fade-in">
+								Amy: "I'm watching almost as many pages as our boss...I'm going to get more than her!"
+							</li>
+							<li class="fragment fade-in">
+								Bob: "It just seems to randomly suggest pages to me, though. Why would I care about Rule #12345?" 
+							</li>
+							<li class="fragment fade-in">
+								Amy: "Well, that rule page is about <span class="fragment highlight-blue">your hardware</span>." 
+							</li>
+							<li class="fragment fade-in">
+								Bob: "Oh, well maybe I do want to watch that!"
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>How has Watch Suggestions helped?</h2>
+						<img src="img/watchersWithTime.svg" class="fragment fade-in" />
+					</section>
+
+				</section>
+
+
+
+				<section>
+					<h2>Quantifying Accountability</h2>
+					<ol>
+						<li style="white-space:nowrap;">
+							Determine number of reviewers for each page
+						</li>
+						<li style="white-space:nowrap;">
+							Determine a way to rate contributors
+						</li>
+						<li style="white-space:nowrap;">
+							Combine (1) and (2) to identify weak points in our data
+						</li>
+						<li style="white-space:nowrap;">
+							Address weak points
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Rating reviewers</h2>
+					<ul>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Accuracy
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Thoroughness
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Impartiality
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Variance across topics
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Probability of <span class="fragment highlight-red">correctness</span>
+						</li>
+					</ul>
+					<h2 class="fragment fade-in" style="margin-top: 40px;">Correctness Score</h2>
+				</section>
+
+				<section>
+					<h2>Engagement Score</h2>
+
+					<ul>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Frequency and recency of editing
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Time between changes and reviews
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Use of page history and diff
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Time spent on each revision
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Quantity and age of pending reviews
+						</li>
+
+					</ul>
+				</section>
+
+				<section>
+					<h2>User Statistics</h2>
+					<img src="img/WatchAnalyticsUsers.png" class="fragment fade-in" />
+				</section>
+
+				<section>
+					<section>
+						<h2>Page Watch Quality</h2>
+						<img src="img/PageStatsTable.png" class="fragment fade-in" />
+					</section>
+
+					<section>
+						<h2>Page Watch Quality</h2>
+						<img src="img/PageScores.png" class="fragment fade-in" />
+					</section>
+				</section>
+
+				<section>
+					<h2>Culture Changes</h2>
+					<aside class="notes">
+						Introduction<br />
+						James addressed the technical aspect of how we're addressing accountability.<br />
+						Now I'll address the cultural aspect.<br />
+						As developers, we want to fix everything, but we can't. We require everyone to contribute.<br />
+						Can we modify people's behavior with software?<br />
+					</aside>
+				</section>
+
+				<section>
+					<h2>Voluntary vs. Enterprise</h2>
+					<ul>
+						<li class="fragment roll-in">Contributing because you want to</li>
+						<li class="fragment roll-in">Contributing because you are paid to</li>
+					</ul>
+					<aside class="notes">
+						Goal of Wikipedia is to offer the sum of all human knowledge.<br />
+						Goal of enterprise KM is to maintain sum of all knowledge specific to org.<br />
+						In both cases, I think you want as many people as you can get from your group to contribute.<br />
+						Otherwise, you’re unlikely to record all knowledge, and your information is more likely to be biased toward participants’ viewpoints.<br />
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Goals</h2>
+						<blockquote class="fragment roll-in">Without <span class="fragment grow highlight-green">continuous</span> contributions and qualified reviews from <span class="fragment grow highlight-green">everyone</span> in your community, a wiki is just another dumpster of <span class="fragment roll-in highlight-red">outdated</span> and <span class="fragment roll-in highlight-red">unreliable</span> information. </blockquote>
+						<aside class="notes">
+							In an enterprise environment, you might just say "your job requires you to use the wiki"<br />
+							But what does that mean? 20% viewing? 15% contributing 2x/week?<br />
+							Wiki goals must align with org goals and be specific
+						</aside>
+					</section>
+
+					<section>
+						<h2>Review Initial goals</h2>
+						<ol>
+							<li>
+								Determine number of reviewers for each page
+							</li>
+							<li style="white-space:nowrap;">
+								Determine a way to rate contributors
+							</li>
+							<li style="white-space:nowrap;">
+								Combine (1) and (2) to identify weak points in our data
+							</li>
+							<li style="white-space:nowrap;">
+								Address weak points
+							</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>Review Short term goals</h2>
+						<ol>
+							<li style="white-space:nowrap;">
+								Encourage users to do their reviews
+							</li>
+							<li style="white-space:nowrap;">
+								Eliminate singly-watched pages
+							</li>
+						</ol>
+					</section>
+
+					<section>
+						<h2>Our Goals from a different view</h2>
+						<ol>
+							<li class="fragment roll-in" style="white-space:nowrap;">
+								Increase number of watchers for each page
+							</li>
+							<li class="fragment roll-in" style="white-space:nowrap;">
+								Increase frequency of reviews performed on each page
+							</li>
+							<li class="fragment roll-in" style="white-space:nowrap;">
+								Increase quality of reviews performed on each page
+							</li>
+						</ol>
+						<aside class="notes">
+							These focus on the product, not the people<br />
+						</aside>
+					</section>
+
+					<section>
+						<h2>Refocus our goals</h2>
+						<blockquote class="fragment roll-in">
+							Instead of focusing on <span class="fragment grow highlight-green">adding</span> content, our focus is now on the <span class="fragment grow highlight-blue">quality</span> of our content. 
+						</blockquote>
+						<br /><br />
+						<p class="fragment roll-in">Even Wikipedia is criticized for focusing on quantity over quality <a href="http://wikipediocracy.com/2015/02/22/the-myth-of-crowdsourcing-at-wikipedia">(Source)</a></p>
+						<aside class="notes">
+							Up until we discovered the problems mentioned earlier in this presentation, focus was on adding content<br />
+							Now our focus is on ensuring content is reviewed properly.
+						</aside>
+					</section>
+				</section>
+
+				<section>
+					<h2>Target Behavior</h2>
+					<ul>
+						<li class="fragment roll-in">Watch Pages</li>
+						<li class="fragment roll-in">Edit often</li>
+						<li class="fragment roll-in">Review promptly</li>
+						<li class="fragment roll-in">Use page history and diff tool</li>
+						<li class="fragment roll-in">Review carefully</li>
+						<li class="fragment roll-in">Maintain low pending review count</li>
+					</ul>
+					<aside class="notes">
+						Until we recognized the problem with our wiki, we did not specify how to use it.<br />
+						Now we need to identify specifically what we want our users to do.
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Who are our users?</h2>
+						<aside class="notes">
+							In order to change our users' behavior, we need to better understand who they are.<br />
+						</aside>
+					</section>
+
+					<section>
+						<h2>EVA Group Analysis</h2>
+							<ul>
+								<li class="fragment roll-in" style="white-space:nowrap;">
+									743 viewers
+								</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">
+									100 contributors
+								</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">
+									47 active contributors
+								</li>
+							</ul>
+							<aside class="notes">
+								Hope to change this so "outsiders" contribute, but not there yet<br />
+								Wide range of aptitude (newbies to wiki savvy)<br />
+								Many value work quality, eye for detail<br />
+								Must justify use of their valuable time<br />
+								Hoping page scores will appeal to sense of pride in work
+							</aside>
+					</section>
+					
+					<section>
+						<h2>Range of Response</h2>
+						<ul>
+							<li class="fragment roll-in" style="white-space:nowrap;">Early adopters</li>
+							<li class="fragment roll-in" style="white-space:nowrap;">Those that began using after some help and motivation</li>
+							<li class="fragment roll-in" style="white-space:nowrap;">Viewers, but not contributors</li>
+							<li class="fragment roll-in" style="white-space:nowrap;">Viewers, contributors, but not reviewers</li>
+							<li class="fragment roll-in" style="white-space:nowrap;">Stubborn, refuse to even view the wiki</li>
+						</ul>
+						<aside class="notes">
+							In this conference group, we're all mostly early adopters (wiki motivated)<br />
+							Consider that most of our users are not in that group.
+						</aside>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Motivation</h2>
+						<p><span class="fragment grow highlight-red">Extrinsic</span> vs. <span class="fragment shrink highlight-green">Intrinsic</span></p>
+						<aside class="notes">
+							How do we get users to do desired behaviors to address goals?<br />
+							Need to identify what motivates users.<br />
+							Dollar/day will eventually not work. Need intrinsic motivation.
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Intrinsic motivation</h2>
+							<ul>
+								<li class="fragment roll-in">Competence</li>
+								<li class="fragment roll-in">Autonomy</li>
+								<li class="fragment roll-in">Relatedness</li>
+							</ul>
+						<aside class="notes">
+							Competence: Challenging accomplishment<br />
+							Autonomy: User in control of environment, need options<br />
+							Relatedness: Something beyond the person, greater good, social interaction
+						</aside>
+					</section>
+					
+					<section>
+						<h2>User Personality Types</h2>
+						<small>Based on an interview with <a href="https://en.wikipedia.org/wiki/Amy_Jo_Kim">Amy Jo Kim</a></small>
+							<ul>
+								<li class="fragment roll-in" style="white-space:nowrap;">Competitors - Act on other users (challenge, showoff, compare)</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Self-Expressers - Act on content (create, build, design, customize)</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Explorers - Interact with content (view, collect, review, curate)</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Collaborators - Interacting with users (share, comment, help)</li>
+							</ul>
+						<aside class="notes">
+							1 approach won't work for everyone<br />
+							Self-expression: Careful that templates don't preclude creativity<br />
+							Explorers: Exactly what Watch Suggestions does<br />
+							Collaborators: Thanks, future dev on social interaction/sharing
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Online Communities</h2>
+						<ul>
+							<li class="fragment roll-in" style="white-space:nowrap;">In a zero-sum game, we are opponents: <span class="fragment highlight-red">One wins, others lose</span></li>
+							<li class="fragment roll-in" style="white-space:nowrap;">In a non-zero-sum game, we are partners: <span class="fragment highlight-green">We all win or we all lose</span></li>
+						<aside class="notes">
+							Wiki environment is not about 1 person winning, but about a community winning<br />
+							Competition should be about the product, not the person<br />
+							Fair playing field: Offer options
+						</aside>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<h2>User activity loops</h2>
+						<aside class="notes">
+							Mechanisms to induce targeted user behavior<br />
+							Provide feedback to users that they're doing desired behavior
+						</aside>
+					</section>
+
+					<section>
+						<h2>The wiki police!</h2>
+						<img src="img/animated-traffic-cop-blowing-whistle.gif" class="fragment fade-in stretch" />
+						<aside class="notes">
+							Careful when correcting new users' mistakes<br />
+							This is called "biting" on Wikipedia
+						</aside>
+					</section>
+
+					<section>
+						<h2>Educational tools</h2>
+							<ul>
+								<li class="fragment roll-in" style="white-space:nowrap;">Welcome e-mail</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Tutorial pages</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Semantic Forms</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Screencasts</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Guided Tours</li>
+							</ul>
+					</section>
+
+					<section>
+						<h2>Meeting Minutes</h2>
+						<img src="img/MMForm.jpg" class="fragment fade-in stretch" />
+						<aside class="notes">
+							Extension to wikify meeting minutes<br />
+							Something every user can do to get started in wiki
+						</aside>
+					</section>
+
+					<section>
+						<h2>Subject Matter Expert</h2>
+						<img src="img/DW-SME.png" class="fragment fade-in stretch" />
+						<img src="img/SME-page.png" class="fragment fade-in stretch" />
+					</section>
+
+					<section>
+						<h2>Pending Reviews</h2>
+						<img src="img/PR-Empty.png" class="fragment fade-in stretch" />
+						<img src="img/PR-Delinquent.png" class="fragment fade-in stretch" />
+						<p>Watch Suggestions</p>
+					</section>
+				</section>
+				
+				<section>
+					<h2>What we've been missing</h2>
+							<ul>
+								<li class="fragment roll-in" style="white-space:nowrap;">Have we accounted for all four personality types?
+									<ul>
+										<li>Competition</li>
+										<li>Self-Expression</li>
+										<li>Exploration</li>
+										<li>Collaboration</li>
+									</ul>
+								</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Have we provided for intrinsic motivation?
+									<ul>
+										<li>Competence</li>
+										<li>Autonomy</li>
+										<li>Relatedness</li>
+									</ul>
+								</li>
+							</ul>
+						<aside class="notes">
+							We designed our wiki based on what motivates us.<br />
+							Now we need to address all the other user types.
+						</aside>
+				</section>
+				
+				<section>
+					<section>
+						<h2>What we plan to add</h2>
+					</section>
+					
+					<section>
+						<h2>Target Behavior</h2>
+						<ul class="fragment roll-in">
+							<li>Watch Pages</li>
+							<li>Edit often</li>
+							<li>Review promptly</li>
+							<li>Use page history and diff tool</li>
+							<li>Review carefully</li>
+							<li>Maintain low pending review count</li>
+						</ul>
+						<p class="fragment roll-in">These behaviors are directly related to our new scores:
+							<ul>
+								<li class="fragment roll-in">User Engagement Score</li>
+								<li class="fragment roll-in">Page Scores</li>
+							</ul>
+						</p>
+						<small class="fragment roll-in">These are still in development</small>
+						<aside class="notes">
+							This approach focuses on the wiki (not the person)<br />
+							Still allows for competition, but between groups of contributors
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Thanks</h2>
+						<img src="img/Thank.png" class="fragment fade-in stretch" />
+						<aside class="notes">
+							Would be better with blame feature (some extensions exist but are outdated)
+						</aside>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Fun</h2>
+						<img src="img/I-Had-Fun-Once-It-Was-Awful.jpeg" class="fragment fade-in stretch" />
+						<aside class="notes">
+							We got so focused on templates and forms and semantic links, we forgot about the fun.<br />
+							To us, the technical aspects are fun<br />
+							To most other users, it's the opposite<br />
+							Player journey: Newbie -> Mastery
+						</aside>
+				</section>
+				
+				<section>
+					<h2>Gamification Framework</h2>
+						<ol class="fragment roll-in">
+							<li>Define objectives</li>
+							<li>Delineate target behaviors</li>
+							<li>Describe players</li>
+							<li>Devise activity loops</li>
+							<li>Don't forget the fun</li>
+							<li>Deploy the appropriate tools</li>
+						</ol>
+					<small style="margin-top:50px;" class="fragment roll-in">Source: Professor Kevin Werbach, Wharton, University of Pennsylvania (<a href="https://www.coursera.org/course/gamification">Coursera</a>)</small>
+						<aside class="notes">
+							Deployment: Try things out, take feedback, modify
+						</aside>
+				</section>
+
+				<section>
+					<h2>Resources</h2>
+					<p>
+						<ul>
+							<li><a href="https://github.com/jamesmontalvo3/WatchAnalytics">Extension:WatchAnalytics</a></li>
+							<li align="left"><a href="https://github.com/enterprisemediawiki/MeetingMinutes">Extension:MeetingMinutes</a></li>
+						</ul>
+					</p><br />
+					<h2>Contacts</h2>
+					<p>
+						<a href="http://enterprisemediawiki.org">EnterpriseMediaWiki.org</a> (<a href="http://github.com/enterprisemediawiki">github</a> / <a href="http://twitter.com/enterprisemw">@enterprisemw</a>)
+						<ul>
+							<li>
+								James Montalvo (<a href="http://github.com/jamesmontalvo3">github</a> / <a href="http://twitter.com/jamesmontalvo3">@jamesmontalvo3</a>)
+							</li>
+							<li>
+								Daren Welsh (<a href="http://github.com/darenwelsh">github</a> / <a href="http://twitter.com/darenwelsh">@darenwelsh</a>)
+							</li>
+							<li>
+								Stephanie Johnston
+							</li>
+						</ul>
+					</p>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				parallaxBackgroundImage: 'img/ISS015E18958_cropped.jpg',
+				parallaxBackgroundSize: '4305px 1431px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

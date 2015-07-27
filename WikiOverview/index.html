@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>EVA Wiki Overview</title>
+
+		<meta name="description" content="Overview of our EVA Wiki from its creation out of necessity to our future plans.">
+		<meta name="author" content="James Montalvo & Daren Welsh">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!--
+
+				As a narrated story?
+
+				We are in the Flight Operations Directorate, in the ExtraVehicular Activity Group
+				We teach astronauts how to do spacewalks, work in MCC
+				Like so many others, our knowledge capture was spread between share drives, web sites, laptops, etc.
+				Out of necessity, we set up a guerrilla wiki based on MW. Our mantra is to search, not sort. This was good, but then we tried SMW and it opened our eyes.
+				We also integrate with existing databases.
+				EARL
+				WatchAnalytics (PR and WS) - knowledge accountability
+				Dumpster quote
+				Scores
+				Culture Shift (this addresses NASA's Knowledge Challenge goal #3)
+				Future: Offline Sync, Farms, Wikibase/Semantic Citations, Wiki Conversations, User Journey
+				Meetup June 9 -> Collaborative development agreements
+
+			-->
+				<section>
+					<h1>EVA Wiki Overview</h1>
+					<br />
+					<p>
+						<small>
+							James Montalvo - Daren Welsh - Stephanie Johnston
+						</small>
+					</p>
+					<p>
+						<small>(Use arrow keys to navigate)</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>A brief history</h2>
+					<p class="fragment roll-in">
+						NASA Flight Operations is the group of people who
+					</p>
+					<ul class="fragment roll-in">
+					<li>Plan human spaceflight missions</li>
+					<li>Train astronauts</li>
+					<li>Support astronauts during their missions via Mission Control Center (MCC)</li>
+					</ul>
+					<aside class="notes">
+						FOD is a few hundred people containing about 20 groups
+					</aside>
+				</section>
+
+				<section>
+					<h2>Groups</h2>
+					<p>
+						This directorate is split into about 20 groups
+					</p>
+					<p class="fragment roll-in">
+						We're in the Extravehicular Activity (EVA) group
+					</p>
+					<p class="fragment roll-in">
+						(NASA-speak for "spacewalks")
+						<br />
+						<img height="300" src="img/EVA_Selfie.jpg" alt="Spacewalk" class="stretch">
+					</p>
+				</section>
+
+				<section>
+					<h2>How We've Always Done It</h2>
+					<h3>Folder Structures</h3>
+					<p class="fragment fade-in">
+						What began as paper folders of typed documents ...
+					</p>
+					<p class="fragment fade-in">
+						Grew to gigabytes of electronic folders
+					</p>
+				</section>
+
+				<section>
+					<h2>This led to problems</h2>
+					<p class="fragment fade-in">
+						Directory trees are difficult to search
+					</p>
+					<p class="fragment fade-in">
+						Multiple copies and versions of documents
+						<ul>
+							<li class="fragment fade-in">
+								Which one do I trust?
+							</li>
+							<li class="fragment fade-in">
+								Do I have to update all of them?
+							</li>
+						</ul>
+					</p>
+					<p class="fragment fade-in">
+						Files are easily moved or 
+						<span class="fragment highlight-red">deleted</span>
+					</p>
+				</section>
+
+				<section>
+					<h2>The "Wiki Way"</h2>
+					<img height="200px" src="img/Database.jpg" alt="DB" class="stretch">
+					<ul>
+						<li>
+							<span class="fragment highlight-green">Search</span>, don't sort
+						</li>
+						<li>
+							Search <span class="fragment highlight-green">content</span>, not just file names
+						</li>
+						<li>
+							A <span class="fragment highlight-green">single</span> portal for information
+						</li>
+						<li>
+							<span class="fragment highlight-green">Automated</span> revision control
+						</li>
+						<li>
+							<span class="fragment highlight-green">Semantic</span> linking
+						</li>
+						<li>
+							<span class="fragment highlight-green">Quantifiable</span> accountability
+						</li>
+					</ul>
+					<aside class="notes">
+						Out of necessity, we set up a guerrilla wiki based on MW. Our mantras include "Search, don't sort" and "DRY".
+					</aside>
+				</section>
+
+				<section>
+					<h2>Mission History</h2>
+					<p>
+						We created a page for each ISS and Shuttle mission. In each page, we set semantic properties for each crew member, flight controller, and relevant hardware item.
+					</p>
+					<img src="img/History.jpg" alt="History" class="stretch">
+				</section>
+				<section>
+					<h2>Mission History</h2>
+						<p>
+							We can then query for data ...
+						</p>
+						<p>
+							<pre><code data-trim>{{#ask: [[Category:Expedition]] 
+|Mainlabel=Expedition
+|? Commander
+|sort = Mission start date
+|order = asc
+}}
+							</code></pre>
+						</p>
+				</section>
+				<section>
+					<h2>Mission History</h2>
+						<p>
+						... and we can elegantly display this data on any page
+						</p>
+						<img src="img/ListofISSCommanders.jpg" alt="List of ISS Commanders" class="stretch">
+				</section>
+
+				<section>
+					<h2>Demo of Semantic MediaWiki</h2>
+					<aside class="notes">
+						Main Page
+						Meeting Minutes - these are semantically linked to related articles (reduce email)
+						EMU is a hot topic, go to EMU page
+						* Infobox, IO image, Hierarchy of component pages
+						* Footer with Meeting Minutes
+						* EVA References
+						* OCADs
+						* NCW
+						* Lessons Learned
+						SpX-7
+						* Manifest Dependencies
+						US EVA IDA1 Install
+						* Infobox w/ personnel
+						* Manifest Dependencies, again
+						* Summary Timeline
+						* Analysis Requests
+						* Footer
+					</aside>
+				</section>
+
+				<section>
+					<h2>A scale of two wikis</h2>
+					<ul>
+						<li class="fragment roll-in">Wikipedia</li>
+						<ul class="fragment roll-in">
+							<li>1000s of active contributors</li>
+							<li>Some pages have major coverage... <span class="fragment highlight-red">some do not</span></li>
+						</ul><br />
+						<li class="fragment roll-in">The EVA Wiki</li>
+						<ul class="fragment roll-in">
+							<li>47 active contributors</li>
+							<li>67272 edits</li>
+							<li>400k views in 3.5 years</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Quantifying Accountability</h2>
+					<ol class="fragment roll-in">
+						<li style="white-space:nowrap;">
+							Determine number of reviewers for each page
+						</li>
+						<li style="white-space:nowrap;">
+							Determine a way to rate contributors
+						</li>
+						<li style="white-space:nowrap;">
+							Combine (1) and (2) to identify weak points in our data
+						</li>
+						<li style="white-space:nowrap;">
+							Address weak points
+						</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Extension:Watch Analytics</h2>
+					<img src="img/WatchAnalyticsPages-NoWatchQuality.png" alt="MediaWiki extension Watch Analytics">
+					<aside class="notes">
+						We created an extension to analyze the state of our wiki
+					</aside>
+				</section>
+
+				<section>
+					<h2>Watcher Distribution: December 2014</h2>
+					<img src="img/dec2014pie.svg" />
+					<aside class="notes">
+						We discovered that the majority of our pages were only being watched by the person who created it. This was a major problem!
+					</aside>
+				</section>
+
+				<section>
+					<h2>Watcher&#x2b04;page relationships</h2>
+					<img height="600px" src="img/ReviewersJuly2014.png" alt="" class="fragment fade-in">
+					<aside class="notes">
+						With this data, we created a visualization. This destroyed our notion that our crowd-sourced knowledge capture was current and accurate.
+					</aside>
+				</section>
+
+				<section>
+					<section>
+						<h2>Goals</h2>
+						<blockquote class="fragment roll-in">Without <span class="fragment grow highlight-green">continuous</span> contributions and qualified reviews from <span class="fragment grow highlight-green">everyone</span> in your community, a wiki is just another dumpster of <span class="fragment roll-in highlight-red">outdated</span> and <span class="fragment roll-in highlight-red">unreliable</span> information. </blockquote>
+					</section>
+
+
+					<section>
+						<h2>Refocus our goals</h2>
+						<blockquote class="fragment roll-in">
+							Instead of focusing on <span class="fragment grow highlight-green">adding</span> content, our focus is now on the <span class="fragment grow highlight-blue">quality</span> of our content. 
+						</blockquote>
+						<br /><br />
+						<p class="fragment roll-in">Even Wikipedia is criticized for focusing on quantity over quality <a href="http://wikipediocracy.com/2015/02/22/the-myth-of-crowdsourcing-at-wikipedia">(Source)</a></p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Accountability Emergency</h2>
+					<p>Short term goals</p>
+					<ol>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Increase number of watchers for each page
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Increase frequency of reviews performed on each page
+						</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">
+							Increase quality of reviews performed on each page
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<section>
+						<h2>Pending Reviews</h2>
+						<img src="img/PendingReviews1.png" alt="Watch Analytics Pending Reviews">
+					</section>
+
+					<section>
+						<h2>How well are we doing with reviewers?</h2>
+						<img height="600px" src="img/ReviewersJuly2014.png" alt="" class="fragment fade-in">
+					</section>
+
+					<section>
+						<h2>Big improvements</h2>
+						<img height="600px" src="img/CurrentReviewership.png" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>At the bottom of Pending Reviews</h2>
+						<img src="img/PendingReviews1.png" alt="Watch Analytics Pending Reviews">
+					</section>
+
+					<section>
+						<h2>Watch Suggestions</h2>
+						<img src="img/WatchSuggestions.png" alt="Watch Analytics Pending Reviews Watch Suggestions">
+					</section>
+
+					<section>
+						<h2>How has Watch Suggestions helped?</h2>
+						<img src="img/watchersWithTime.svg" class="fragment fade-in" />
+					</section>
+				</section>
+
+				<section>
+					<h2>Rating reviewers and pages</h2>
+					<ol>
+						<li style="white-space:nowrap;">Probability of correctness</li>
+						<li style="white-space:nowrap;">Engagement Score</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>User Statistics</h2>
+					<img src="img/WatchAnalyticsUsers.png" class="fragment fade-in" />
+				</section>
+
+				<section>
+					<section>
+						<h2>Page Watch Quality</h2>
+						<img src="img/PageStatsTable.png" class="fragment fade-in" />
+					</section>
+
+					<section>
+						<h2>Page Watch Quality</h2>
+						<img src="img/PageScores.png" class="fragment fade-in" />
+					</section>
+				</section>
+
+				<section>
+					<h2>Culture Changes</h2>
+				</section>
+					
+				<section>
+					<h2>Range of Response</h2>
+					<ul>
+						<li class="fragment roll-in" style="white-space:nowrap;">Early adopters</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">Those that began using after some help and motivation</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">Viewers, but not contributors</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">Viewers, contributors, but not reviewers</li>
+						<li class="fragment roll-in" style="white-space:nowrap;">Stubborn, refuse to even view the wiki</li>
+					</ul>
+				</section>
+				
+				<section>
+					<section>
+						<h2>Motivation</h2>
+						<p><span class="fragment grow highlight-red">Extrinsic</span> vs. <span class="fragment shrink highlight-green">Intrinsic</span></p>
+					</section>
+					
+					<section>
+						<h2>Intrinsic motivation</h2>
+							<ul>
+								<li class="fragment roll-in">Competence</li>
+								<li class="fragment roll-in">Autonomy</li>
+								<li class="fragment roll-in">Relatedness</li>
+							</ul>
+					</section>
+					
+					<section>
+						<h2>User Personality Types</h2>
+						<small>Based on an interview with <a href="https://en.wikipedia.org/wiki/Amy_Jo_Kim">Amy Jo Kim</a></small>
+							<ul>
+								<li class="fragment roll-in" style="white-space:nowrap;">Competitors - Act on other users (challenge, showoff, compare)</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Self-Expressers - Act on content (create, build, design, customize)</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Explorers - Interact with content (view, collect, review, curate)</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Collaborators - Interacting with users (share, comment, help)</li>
+							</ul>
+					</section>
+					
+					<section>
+						<h2>Online Communities</h2>
+						<ul>
+							<li class="fragment roll-in" style="white-space:nowrap;">In a zero-sum game, we are opponents: <span class="fragment highlight-red">One wins, others lose</span></li>
+							<li class="fragment roll-in" style="white-space:nowrap;">In a non-zero-sum game, we are partners: <span class="fragment highlight-green">We all win or we all lose</span></li>
+
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<h2>User activity loops</h2>
+					<ul>
+						<li>Tutorials, Screencasts, and Guided Tours</li>
+						<li>Meeting Minutes</li>
+						<li>Missions/EVAs</li>
+						<li>Subject Matter Experts</li>
+						<li>Pending Reviews</li>
+						<li>Page Scores</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>What we've been missing</h2>
+							<ul>
+								<li class="fragment roll-in" style="white-space:nowrap;">Have we accounted for all four personality types?
+									<ul>
+										<li>Competition</li>
+										<li>Self-Expression</li>
+										<li>Exploration</li>
+										<li>Collaboration</li>
+									</ul>
+								</li>
+								<li class="fragment roll-in" style="white-space:nowrap;">Have we provided for intrinsic motivation?
+									<ul>
+										<li>Competence</li>
+										<li>Autonomy</li>
+										<li>Relatedness</li>
+									</ul>
+								</li>
+							</ul>
+				</section>
+				
+				<section>
+					<section>
+						<h2>The forward plan</h2>
+					</section>
+					
+					<section>
+						<h2>Thanks</h2>
+						<img src="img/Thank.png" class="fragment fade-in stretch" />
+					</section>
+				
+					<section>
+						<h2>Fun</h2>
+							<img src="img/I-Had-Fun-Once-It-Was-Awful.jpeg" class="fragment fade-in stretch" />
+					</section>
+
+					<section>
+						<h2>Development</h2>
+						<ul>
+							<li class="fragment roll-in">Offline Sync</li>
+							<li class="fragment roll-in">Wiki Farms</li>
+							<li class="fragment roll-in">Wikibase/Semantic Citations</li>
+							<li class="fragment roll-in">Wiki Conversations</li>
+							<li class="fragment roll-in">User Journey</li>
+						</ul>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Gamification Framework</h2>
+						<ol class="fragment roll-in">
+							<li>Define objectives</li>
+							<li>Delineate target behaviors</li>
+							<li>Describe players</li>
+							<li>Devise activity loops</li>
+							<li>Don't forget the fun</li>
+							<li>Deploy the appropriate tools</li>
+						</ol>
+					<small style="margin-top:50px;" class="fragment roll-in">Source: Professor Kevin Werbach, Wharton, University of Pennsylvania (<a href="https://www.coursera.org/course/gamification">Coursera</a>)</small>
+				</section>
+
+				<section>
+					<h2>June 9 Meetup</h2>
+					<ul>
+						<li style="white-space:nowrap;">Co-hosted by JSC and TCC-Houston at the Gilruth Center</li>
+						<li style="white-space:nowrap;">Collaborative development agreements</li>
+					</ul>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				mouseWheel: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				parallaxBackgroundImage: 'img/ISS015E18958_cropped.jpg',
+				parallaxBackgroundSize: '4305px 1431px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
