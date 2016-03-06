@@ -12,13 +12,16 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- For image sizing -->
+		<!-- <link rel="stylesheet" href="lib/css/override.css"> -->
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
@@ -61,7 +64,7 @@
 				<section>
 					<h2>The word "wiki"</h2>
 					<p class="fragment roll-in" style="font-style:italic;">
-						a website that allows collaborative editing of its content and structure by its users.
+						a website that allows <span class="fragment highlight-green">collaborative editing</span> of its content and structure by its users.
 					</p>
 					<aside class="notes">
 
@@ -71,22 +74,51 @@
 				<section>
 					<h2>How is the EVA Wiki different?</h2>
 					<ul><!-- class="fragment roll-in" style="font-style:italic;"> -->
-						<li>The most <span class="fragment highlight-green">accountable</span> knowledge management system in existence</li>
+						<li>The most <span class="fragment highlight-green">accountable</span> knowledge management system we've seen
+						</li>
+						<li>binding existing sources of data with the <span class="fragment highlight-green">context</span> missing from traditional search tools
+						</li>
+						<li>providing the power of <span class="fragment highlight-green">semantic relationships</span> between data
+						</li>
+						<!--
 						<li>binding existing sources of <span class="fragment highlight-green">explicit</span> data with the "glue" of our <span class="fragment highlight-green">tacit</span> knowledge</li>
 						<li>and providing <span class="fragment highlight-green">context</span> missing from traditional search tools</li>
+						-->
 					</ul>
+					<aside class="notes">
+				        (hit 's' on your keyboard to see notes)
+				    </aside>
 				</section>
 
 				<section>
 					<h2>Console Handbook, re-born</h2>
 					<p>
-						Our collective knowledge, easily updated by anyone
+						Our collective knowledge, easily updated by <span class="fragment highlight-green">anyone</span>
 					</p>
+					<aside class="notes">
+				        The CHB was the wiki before it was a wiki. It held the group's knowledge in one place, but over time it grew and the review process to udpate it became really long. That said, the wiki is not limited to just console material.
+				    </aside>
+				</section>
+
+				<section><!--  data-background="img/EMU-Page.png"  data-background-transition="zoom"> -->
+					<img class="stretch" src="img/EMU-Page.png" alt="EMU Page">
+				</section>
+
+				<section> <!-- data-background="img/Small-Tools-Page.png" data-background-size="100%" data-background-transition="zoom"> -->
+					<img class="stretch" src="img/Small-Tools-Page.png" alt="Lesson Plan Page">
+				</section>
+
+				<section> <!-- data-background="img/SSU-Page.png" data-background-size="100%" data-background-transition="zoom"> -->
+					<img class="stretch" src="img/SSU-Page.png" alt="SSU Page">
+				</section>
+
+				<section><!--  data-background="img/US-EVA-35-Page.png" data-background-size="100%" data-background-transition="zoom"> -->
+					<img class="stretch" src="img/US-EVA-35-Page.png" alt="EVA Page">
 				</section>
 
 				<section>
 					<h2>Edit - Alert - Review Loop</h2>
-					<img height="400px" src="img/EARL-1.png" alt="EARL">
+					<img class="stretch" height="400px" src="img/EARL-1.png" alt="EARL">
 					<ol>
 						<li>
 							Systems provides method to <span class="fragment highlight-blue">edit</span> content
@@ -100,14 +132,14 @@
 					</ol>
 				</section>
 
-				<section>
+				<section> <!-- data-background="img/EARL-2.png" data-background-size="100%" data-background-transition="zoom"> -->
 					<h2>Edit - Alert - Revieeeeeeeeeeeew Loop</h2>
-					<img height="300px" src="img/EARL-2.png" alt="EARL">
+					<img class="stretch" height="300px" src="img/EARL-2.png" alt="EARL">
 				</section>
 
 				<section>
 					<h2>Blocked Loop</h2>
-					<img height="300px" src="img/EARL-3.png" alt="EARL">
+					<img class="stretch" height="300px" src="img/EARL-3.png" alt="EARL">
 					<p>
 						One user with a long review time blocks other users from further edits
 					</p>
@@ -115,7 +147,7 @@
 
 				<section>
 					<h2>The Wiki Way</h2>
-					<img height="300px" src="img/EARL-4.png" alt="EARL">
+					<img class="stretch" height="300px" src="img/EARL-4.png" alt="EARL">
 					<ul>
 						<li>
 							Users don't have to wait for other reviewers
@@ -127,38 +159,40 @@
 				</section>
 
 				<section>
-					<h2>Accountability</h2>
-					<ul>
-						<li>
-							The edit-alert-review loop
-						</li>
-						<li>
-							Accountability analytics
-						</li>
-					</ul>
+					<p>
+						What does this edit-alert-review loop look like in the wiki?
+					</p>
 				</section>
 
 				<section>
 					<h2>Watch a Page</h2>
-					<img width="90%" src="img/WatchPage.png">
+					<img class="stretch" width="90%" src="img/WatchPage.png">
 					</ul>
 				</section>
 
 				<section>
 					<h2>Pending Reviews</h2>
-					<img src="img/PendingReviews1.png" alt="Watch Analytics Pending Reviews">
+					<img class="stretch" src="img/PendingReviews1.png" alt="Watch Analytics Pending Reviews">
 				</section>
 
 				<section>
 					<h2>Difference View</h2>
-					<img src="img/Diff.png" alt="View difference between two revisions of a page">
+					<img class="stretch" src="img/Diff.png" alt="View difference between two revisions of a page">
 				</section>
 
 				<section>
 					<h2>Watch Suggestions</h2>
-					<img src="img/WatchSuggestions.png" alt="Watch Analytics Watch Suggestions">
+					<img class="stretch" src="img/WatchSuggestions2.png" alt="Watch Analytics Watch Suggestions">
 				</section>
 
+				<section>
+					<h2>Accountability</h2>
+					<p>
+						Demonstrate how the wiki provides analytics to measure accountability based on user contributions and reviews
+					</p>
+				</section>
+
+				<!--
 				<section>
 					<h2>Watch Suggestions: Real Conversation</h2>
 					<p style="font-style:italic;font-size:70%;">
@@ -176,17 +210,18 @@
 							Bob: "It just seems to randomly suggest pages to me, though. Why would I care about OCAD 12345?"
 						</li>
 						<li>
-							Amy: "Well, that OCAD page is about <span style="color:green">your hardware</span>."
+							Amy: "Well, that OCAD page is about <span class="fragment highlight-green">your hardware</span>."
 						</li>
 						<li>
 							Bob: "Oh, well maybe I do want to watch that!"
 						</li>
 					</ul>
 				</section>
+				-->
 
 				<section>
 					<h2>How has Watch Suggestions helped?</h2>
-					<img src="img/EffectOfWatchSuggestions.png" alt="Effect of Watch Suggestions">
+					<img class="stretch" src="img/EffectOfWatchSuggestions.png" alt="Effect of Watch Suggestions">
 				</section>
 
 				<!-- <section>
@@ -194,32 +229,41 @@
 					<img src="img/watchersWithTime.svg" alt="Effect of Watch Suggestions part 2">
 				</section> -->
 
+				<!--
 				<section>
 					<h2>How well are we watching pages?</h2>
-					<img height="600px" src="img/CurrentReviewershipGray.png" alt="">
+					<img class="stretch" height="600px" src="img/CurrentReviewershipGray.png" alt="">
 				</section>
+				-->
 
 				<section>
 					<h2>How well are we doing with reviewers?</h2>
-					<img height="600px" src="img/CurrentReviewership.png" alt="">
+					<img class="stretch" height="600px" src="img/CurrentReviewership.png" alt="">
 				</section>
 
+				<!--
 				<section>
 					<h2>This is how it looked a year ago!</h2>
-					<img height="600px" src="img/ReviewersJuly2014.png" alt="">
+					<img class="stretch" height="600px" src="img/ReviewersJuly2014.png" alt="">
+					<aside class="notes">
+				        For the first time, we can actually track and manage our knowledge.
+				    </aside>
 				</section>
+				-->
 
-				<section>
+				<!-- <section>
 					<h2>Comparing Timeliness of Reviewers</h2>
 					<img height="600px" src="img/UserComparison.png" alt="">
-				</section>
+				</section> -->
 
+				<!--
 				<section>
 					<h2>Analytics Summary</h2>
 					<p>
 						The EVA Wiki is able to automatically analyze its own state and provide suggestions to the user to help them work most efficiently.
 					</p>
 				</section>
+				-->
 
 				<section>
 					<h2>Reliability</h2>
@@ -230,22 +274,19 @@
 
 				<section>
 					<h2>Page History</h2>
-					<p>
-						<img src="img/RevisionHistory_example.JPG">
-					</p>
-					</ul>
+						<img class="stretch" src="img/RevisionHistory_example.JPG">
 				</section>
 
 				<section>
 					<h2>Fortified Accountability</h2>
 					<p>
-						How can we make sure <span style="color:red;">critical</span> data is reviewed <span style="color:red;">before</span> being publicly available?
+						How can we make sure <span style="color:red;">critical</span> data is reviewed <span style="color:red;">before</span> being published?
 					</p>
 				</section>
 
 				<section>
 					<h2>Approved Revisions</h2>
-					<img src="img/ApprovedRevs_example.png" alt="Approved Revisions example">
+					<img class="stretch" src="img/ApprovedRevs_example.png" alt="Approved Revisions example">
 				</section>
 
 				<section>
@@ -259,20 +300,16 @@
 					<h2>US EVA 34 Page</h2>
 				</section>
 
-				<section>
-					<h2>2015 Year in Review</h2>
-					<p>
-						Briefly show that we have data to showcase, end with animation of US EVA 34 page
-					</p>
+				<section> <!-- data-background="img/US_EVA_34_-_Animation-combined.gif" data-background-size="100%" data-background-transition="convex"> -->
+					<img class="stretch" src="img/US_EVA_34_-_Animation-combined.gif" alt="EVA Page animation">
 				</section>
 
-				<section>
-					<h2>List of FOD Wikis</h2>
-					<p>
-						We're working with CD to assess the architecture of our wiki network
-					</p>
+				<section> <!-- data-background="img/NASA_Semantic_Wikis.png" data-background-size="100%" data-background-transition="concave"> -->
+					<img class="stretch" src="img/NASA_Semantic_Wikis.png" alt="NASA Semantic Wikis">
+					<aside class="notes">
+				        We're working with CD to assess the architecture of our wiki network
+				    </aside>
 				</section>
-
 
 
 			</div>
@@ -292,6 +329,8 @@
 				history: true,
 				center: true,
 				mouseWheel: true,
+				maxScale: 10.0,
+				margin: 0.01,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
