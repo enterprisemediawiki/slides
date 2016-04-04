@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.reveal .slides {
+  max-height: 100% !important;
+  max-width: 100% !important;
+  top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.reveal .slides>section {
+  max-height: 90% !important;
+  max-width: 100% !important;
+  top: auto !important;
+}
+
+.reveal .slides>section>section {
+  max-height: 100% !important;
+  max-width: 100% !important;
+}
+
+/*.reveal .slides > section.present, .reveal .slides > section > section.present {
+  max-height: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 0 !important;
+}*/
